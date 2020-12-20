@@ -189,7 +189,7 @@
     // Start animation when the skillbars hit the middle of the screen
     if (skillbars.offset().top <= (doc.scrollTop() + $(window).height()/2)) {
       $('.skillbar').each(function(){
-        $(this).find('.skillbar-bar').delay(100).animate({
+        $(this).find('.skillbar-bar').delay(3000).animate({
           width: (fillBarSize * parseInt($(this).attr('data-percent')) / 100) + 'px'
         },3);
       });
